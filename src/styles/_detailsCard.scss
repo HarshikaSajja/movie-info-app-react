@@ -1,0 +1,20 @@
+.custom-row {
+    margin:1rem;
+
+    .custom-col-md-4 {
+        padding: 0;
+
+        .card-img-top{
+            height: 100%;
+        }
+    }
+
+    .custom-col-md-8 {
+        padding: 0.5rem 1rem;
+
+        .btn-links {
+            border: none;
+            margin: 0.5rem;
+        }
+    }
+}

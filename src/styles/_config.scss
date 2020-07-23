@@ -1,0 +1,13 @@
+// setting text color based on background color
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
+%center-horizontally {
+    display: block;
+    margin: 0 auto;
+}

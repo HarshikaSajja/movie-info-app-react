@@ -1,0 +1,20 @@
+.playing-now {
+    margin-left: 0;
+    position: absolute;
+    overflow-y: scroll;
+    padding: 0.5rem;
+
+    &-card {
+        margin: 0.5rem 0;
+    }
+
+    .poster {
+        height: 250px; 
+        width: 150px;
+    }
+}
+
+.playing-now::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}

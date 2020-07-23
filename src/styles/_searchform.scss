@@ -1,0 +1,26 @@
+.search {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255,0.5);
+    box-shadow: 5px 5px 1rem black;
+
+    h2 {
+        display: block;
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    &-form {
+        padding: 1rem;
+    }
+
+    &-field {
+        margin: 1rem auto;
+        border: 2px solid grey;
+    }
+
+    &-btn {
+        @extend %center-horizontally;
+    }
+}

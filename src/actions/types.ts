@@ -6,7 +6,7 @@ export enum Constants {
     GET_NOW_PLAYING = 'GET_NOW_PLAYING'
 }
 
-interface OmdbMovie {
+export interface OmdbMovie {
     Title: string,
     Year: string,
     imdbID: string,
@@ -14,35 +14,35 @@ interface OmdbMovie {
     Poster: string
 }
 
-interface OmdbSearch {
+export interface OmdbSearch {
     type: typeof Constants.SEARCH,
     payload: OmdbMovie[],
     responseFound: boolean
 }
 
-interface Trending {
+export interface Trending {
     id: string,
     poster_path: string
 }
 
-interface PlayingNow extends Trending{
+export interface PlayingNow extends Trending{
     title: string,
     overview: string
 }
 
-interface TmdbTrending {
+export interface TmdbTrending {
     type: typeof Constants.GET_TRENDING,
     payload: Trending[],
     responseFound: boolean
 }
 
-interface TmdbPlayingNow {
+export interface TmdbPlayingNow {
     type: typeof Constants.GET_NOW_PLAYING,
     payload: PlayingNow[],
     responseFound: boolean
 }
 
-interface IMovieDetails {
+export interface IMovieDetails {
     Genre: string,
     Released: string,
     imdbRating: string,
@@ -54,9 +54,7 @@ interface IMovieDetails {
     Poster: string
 }
 
-interface Details {
+export interface Details {
     type: typeof Constants.GET_DETAILS,
     payload: IMovieDetails
 }
-
-export { OmdbSearch, TmdbTrending, TmdbPlayingNow, Trending, PlayingNow, OmdbMovie, IMovieDetails, Details}

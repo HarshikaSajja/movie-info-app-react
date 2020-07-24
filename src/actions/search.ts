@@ -4,7 +4,7 @@ import { Constants, OmdbSearch, TmdbTrending, TmdbPlayingNow } from './types';
 import { Dispatch } from 'redux'
 
 export const searchMovie:Function = (movieName:string) => (dispatch:Dispatch<OmdbSearch>) => {
-    axios.get(`http://www.omdbapi.com/?apikey=${omdbApiKey}&s=${movieName}`)
+    axios.get(`https://www.omdbapi.com/?apikey=${omdbApiKey}&s=${movieName}`)
         .then(response => {
             if(response.data.Response === 'True'){
                 dispatch({

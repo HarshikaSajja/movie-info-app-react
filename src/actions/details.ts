@@ -4,7 +4,7 @@ import { Constants, Details, IMovieDetails} from './types';
 import { Dispatch } from 'redux'
 
 export const getDetails:Function = (id:string) => (dispatch:Dispatch<Details>) => {
-    axios.get(`http://www.omdbapi.com/?apikey=${omdbApiKey}&i=${id}`)
+    axios.get(`https://www.omdbapi.com/?apikey=${omdbApiKey}&i=${id}`)
         .then(response => {
             if(response.data.Response === 'True'){
                 dispatch({
